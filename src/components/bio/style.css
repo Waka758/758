@@ -1,0 +1,166 @@
+.icon-bg {
+    background-color: rgba(15, 204, 206, .1);
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+p, h4 {
+    color: #444444;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.color-green-bold {
+    color: var(--main-color);
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.img-expeditioner {
+    width: 68px;
+    border-radius: 0;
+    margin-left: 10px;
+}
+
+.name-main {
+    justify-content: space-between;
+    margin-top: -24px;
+}
+
+.m-50 {
+    margin: 50px 0 50px 0;
+}
+
+.mr-50 {
+    margin: 50px;
+    text-align: center;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.btn-download {
+    background-color: var(--main-color);
+    padding: 5px 21px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.img-bio {
+    border: 3px #08b9bb solid;
+    border-radius: 100%;
+    width: 150px;
+}
+
+.img-stats {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.blob {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    transform: scale(1);
+    animation: pulse-black 2s infinite;
+}
+
+.blob.blue {
+    background: rgba(8, 185, 187, .1);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+    animation: pulse-blue 2s infinite;
+}
+
+@keyframes pulse-blue {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mr-50 {
+        margin: 0;
+        margin-top: -40px;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    svg {
+        text-align: center;
+    }
+
+    .flex-between {
+        justify-content: center;
+    }
+
+    .mr-10 {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .btn-download {
+        margin-top: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .name-main {
+        justify-content: center;
+        margin-top: -16px;
+    }
+
+    .img-expeditioner {
+        width: 50px;
+    }
+}
